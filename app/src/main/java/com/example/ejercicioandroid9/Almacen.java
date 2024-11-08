@@ -19,4 +19,5 @@ public class Almacen {
     public void setContador(int contador) {
         this.contador = contador;
     }
+
 }
