@@ -32,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
                     Almacen.setNombre(nom.getText().toString());
                     mediaPlayer.start();
                     Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    try{
+                        Thread.sleep(2000);
+                    }catch(Exception e){
+                        e.printStackTrace();
+                    }
                     startActivity(intent);
                 }
             }
