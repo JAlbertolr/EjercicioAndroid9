@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     tools:context=".MainActivity2">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnPregunta1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
@@ -19,60 +20,56 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="350dp"
-        android:layout_height="90dp"
+        android:layout_height="50dp"
         android:layout_marginTop="60dp"
-        android:text="¿Qué es Android Studio?"
+        android:text="@string/pregunta1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Un sistema operativo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Un entorno de desarrollo integrado (IDE) para Android"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
-
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Un lenguaje de programación"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
-
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Una base de datos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
-
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <RadioButton
+            android:id="@+id/rapiña"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/respuesta1_1" />
+
+        <RadioButton
+            android:id="@+id/acuatica"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/respuesta1_2" />
+
+        <RadioButton
+            android:id="@+id/cantora"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/respuesta1_3" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/colibri" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

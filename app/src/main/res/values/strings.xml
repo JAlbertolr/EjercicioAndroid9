@@ -1,33 +1,33 @@
 <resources>
     <string name="app_name">EjercicioAndroid9</string>
-    <string name="pregunta1">¿Qué es Android Studio?</string>
-    <string name="respuesta1_1"> Un lenguaje de programación para Android</string>
-    <string name="respuesta1_2">Un sistema operativo para dispositivos móviles</string>
-    <string name="respuesta1_3"> Un entorno de desarrollo integrado (IDE) para Android</string>//correcta
-    <string name="respuesta1_4">Una herramienta de diseño de interfaces de usuario</string>
+    <string name="pregunta1">¿Qué tipo de ave es un colibrí?</string>
+    <string name="respuesta1_1">Ave de rapiña</string>
+    <string name="respuesta1_2">Ave acuática</string>
+    <string name="respuesta1_3">Ave cantora</string>//correcta
 
-    <string name="pregunta2">¿Cuál es la función principal del archivo build.gradle en Android Studio?</string>
-    <string name="respuesta2_1"> Almacenar el código fuente de la aplicación</string>
-    <string name="respuesta2_2">Configurar el entorno de desarrollo y las dependencias </string>//correcta
-    <string name="respuesta2_3"> Gestionar los recursos de la aplicación</string>
-    <string name="respuesta2_4">Compilar el código fuente en un archivo APK</string>
 
-    <string name="pregunta3"> ¿Qué es un Activity en Android?</string>
-    <string name="respuesta3_1"> Un componente que representa una pantalla de la aplicación</string>//correcta
-    <string name="respuesta3_2">Un archivo que contiene el código fuente de la aplicación </string>
-    <string name="respuesta3_3"> Un elemento de diseño de la interfaz de usuario</string>
-    <string name="respuesta3_4">Una herramienta para depurar el código</string>
+    <string name="pregunta2">¿Dónde viven los pingüinos?</string>
+    <string name="respuesta2_1">África</string>
+    <string name="respuesta2_2">Antártida </string>//correcta
+    <string name="respuesta2_3">Australia</string>
 
-    <string name="pregunta4">¿Cómo se crea un nuevo proyecto en Android Studio?</string>
-    <string name="respuesta4_1"> Seleccionando "New Project" en el menú "File"</string>//correcta
-    <string name="respuesta4_2">Creando un nuevo archivo con la extensión .xml  </string>
-    <string name="respuesta4_3"> Importando un proyecto existente desde GitHub</string>
-    <string name="respuesta4_4">Utilizando la herramienta "Android Virtual Device"</string>
 
-    <string name="pregunta5">. ¿Qué es un Manifest en Android?</string>
-    <string name="respuesta5_1"> Un archivo que define las funciones de la aplicación </string>//correcta
-    <string name="respuesta5_2"> Un archivo que contiene el código fuente de la aplicación  </string>
-    <string name="respuesta5_3">Un archivo que define la estructura de la interfaz de usuario</string>
-    <string name="respuesta5_4">Un archivo que contiene la información de la aplicación</string>
+    <string name="pregunta3">¿Cuál es el nombre científico del león?</string>
+    <string name="respuesta3_1">Panthera leo</string>//correcta
+    <string name="respuesta3_2">Felis silvestris catus</string>
+    <string name="respuesta3_3">Canis lupus familiaris</string>
+
+
+    <string name="pregunta4">¿Cuál es el nombre de la raza de caballo más pequeña del mundo?</string>
+    <string name="respuesta4_1">Appalosa</string>
+    <string name="respuesta4_2">Falabella</string>//correcta
+    <string name="respuesta4_3">Clydesdale</string>
+
+
+    <string name="pregunta5">¿Qué tipo de veneno produce una araña viuda negra?</string>
+    <string name="respuesta5_1"> Neurotóxico</string>//correcta
+    <string name="respuesta5_2">Hemotóxico</string>
+    <string name="respuesta5_3">Citotóxico</string>
+
 
 </resources>
