@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        inicio = findViewById(R.id.btnIniciar);
+        inicio = findViewById(R.id.btnInicio);
         nom = findViewById(R.id.textoNombre);
         mediaPlayer = MediaPlayer.create(this, R.raw.inicio);
 
