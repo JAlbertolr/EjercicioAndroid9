@@ -11,16 +11,17 @@
         android:id="@+id/label2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a la app de preguntas de animales"
+        android:text="Trivial de preguntas de animales"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textColor="@color/primaryDark"
+        android:textSize="34dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintVertical_bias="0.086" />
 
     <Button
         android:id="@+id/btnInicio"
