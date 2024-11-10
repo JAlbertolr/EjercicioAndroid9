@@ -3,13 +3,14 @@ package com.example.ejercicioandroid9;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
+
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 
 public class MainActivity2 extends AppCompatActivity {
@@ -34,24 +35,25 @@ MediaPlayer mediaPlayer;
                 Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
                 // Verifica si el RadioButton "rapiña" está seleccionado
                 if (rb.isChecked()) {
-                    Almacen.incrementContador();// Aumenta el contador en 2
-                    //Toast.makeText(MainActivity2.this, "Respuesta correcta!", Toast.LENGTH_SHORT).show();
-                    mediaPlayer = MediaPlayer.create(MainActivity2.this, R.raw.succes); // Reemplaza "acierto.mp3" con el nombre de tu archivo de sonido de acierto
-                    mediaPlayer.start(); // Reproduce el sonido de acierto
+                    Almacen.incrementContador();
+                    Toast.makeText(MainActivity2.this, "Respuesta correcta!", Toast.LENGTH_SHORT).show();
+                    mediaPlayer = MediaPlayer.create(MainActivity2.this, R.raw.succes);
+                    mediaPlayer.start();
 
 
 
                 } else {
-                   // Toast.makeText(MainActivity2.this, "Respuesta incorrecta", Toast.LENGTH_SHORT).show();
-                    mediaPlayer = MediaPlayer.create(MainActivity2.this, R.raw.negative); // Reemplaza "error.mp3" con el nombre de tu archivo de sonido de error
-                    mediaPlayer.start(); // Reproduce el sonido de error
+                   Toast.makeText(MainActivity2.this, "Respuesta incorrecta", Toast.LENGTH_SHORT).show();
+                    mediaPlayer = MediaPlayer.create(MainActivity2.this, R.raw.negative);
+                    mediaPlayer.start();
                 }
+
                 try{
                     Thread.sleep(2000);
                 }catch(Exception e){
                     e.printStackTrace();
                 }
-                //Toasty.success(this, "Operación exitosa", Toast.LENGTH_SHORT).show();
+                //Toasty.success(this, "Respuesta correcta", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });

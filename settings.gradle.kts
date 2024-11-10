@@ -10,9 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
     }
 }
 
 rootProject.name = "EjercicioAndroid9"
 include(":app")
- 
+include(":toasty")

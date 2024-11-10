@@ -4,6 +4,7 @@ public class Almacen {
     private static String nombre;
     private static int contador = 0;
 
+
     public static String getNombre() {
         return nombre;
     }
@@ -23,5 +24,7 @@ public class Almacen {
     public static void incrementContador() {
         contador++;
     }
+
+
 
 }

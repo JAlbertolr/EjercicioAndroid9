@@ -1,7 +1,7 @@
 package com.example.ejercicioandroid9;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.widget.Toast;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -32,16 +32,17 @@ Button pregunta2;
                 Intent intent = new Intent(MainActivity3.this, MainActivity4.class);
                 if (rb.isChecked()) {
                     Almacen.incrementContador();
-                    //Toast.makeText(MainActivity2.this, "Respuesta correcta!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity3.this, "Respuesta correcta!", Toast.LENGTH_SHORT).show();
                     mediaPlayer = MediaPlayer.create(MainActivity3.this, R.raw.succes);
                     mediaPlayer.start(); // Reproduce el sonido de acierto
 
 
                 } else {
-                    // Toast.makeText(MainActivity2.this, "Respuesta incorrecta", Toast.LENGTH_SHORT).show();
+                     Toast.makeText(MainActivity3.this, "Respuesta incorrecta", Toast.LENGTH_SHORT).show();
                     mediaPlayer = MediaPlayer.create(MainActivity3.this, R.raw.negative);
                     mediaPlayer.start(); // Reproduce el sonido de error
                 }
+
                 try{
                     Thread.sleep(2000);
                 }catch(Exception e){
