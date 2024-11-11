@@ -22,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         inicio = findViewById(R.id.btnInicio);
         nom = findViewById(R.id.textoNombre);
         mediaPlayer = MediaPlayer.create(this, R.raw.inicio);
-
+        Almacen.setNombre("");
         inicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (nom == null || nom.getText().toString().isEmpty()) {
+                String nombre = nom.getText().toString().trim();
+
+                if (nombre.isEmpty() || nombre.equals("*")) {
                     Toast.makeText(MainActivity.this, "Inserte su nombre", Toast.LENGTH_SHORT).show();
                 } else {
                     Almacen.setNombre(nom.getText().toString());
